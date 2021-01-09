@@ -1,0 +1,80 @@
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 100px;
+    background-color: rgba(255, 255, 255, 0.418);
+   
+}
+
+p:hover {
+    background-color: black;
+    color: white;
+}
+
+#line {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    border: 10px;
+    border-color: black;
+}
+
+
+#leftOver {
+    margin-top: 5%;
+    padding: ;
+    animation: slide 4s;
+    /* background-image: url(https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1504674900247-0877df9cc836%3Fixid%3DMXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%253D%26ixlib%3Drb-1.2.1%26auto%3Dformat%26fit%3Dcrop%26w%3D1050%26q%3D80);
+    background-image: cover; */
+}
+
+#select {
+    animation: select 2s;
+}
+
+
+#hangOver {
+    animation: slideLeft 4s;
+}
+
+@keyframes select {
+    0% {
+        transform: translate3d(0px, 0px, 0px);
+        opacity: 0%;
+    }
+    50% {
+        transform: translate3d(0px, 0px, 0px);
+        opacity: 0%;
+    }
+    100% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: translate3d(0px, -80px, 0px);
+        opacity: 0%;
+    }
+    50% {
+        transform: translate3d(0px, -80px, 0px);
+        opacity: 0%;
+    }
+    100% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translate3d(0px, 80px, 0px);
+        opacity: 0%;
+    }
+    50% {
+        transform: translate3d(0px, 80px, 0px);
+        opacity: 0%;
+    }
+    100% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+}
+

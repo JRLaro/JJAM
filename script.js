@@ -1,4 +1,9 @@
+$(document).ready(function () {
 
-$.ajax(settings).done(function (response) {
-	console.log(response);
-});
+
+//let the javascript BEGIIIIN
+
+
+ })
+
+
