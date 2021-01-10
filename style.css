@@ -3,28 +3,59 @@
     background-color: #cccccc;
    } */
 /* what is the font style? */
-.title{
+.title { 
     height: 30px;
     font-family:'Times New Roman', Times, serif;
     text-decoration: underline;
+    justify-content: center;
     
 }
+/* body */
 
-
-   .body {
-    background-image: url(../JJAM/images/foodbackground.jpeg);
-    padding: 500px 100px;
-    margin: 500;
+html {
+    background-image: url(./images/foodbackground.jpeg);
     background-size: cover;
+    /* background-repeat: no-repeat; */
 
 }
-#container {
-    justify-content: flex-end;
+
+
+#hero {
+
+    justify-content: center;
+    align-items: center;
+    border-style:solid;
+    border-width:thick;
+    border-color: black;
+    
 
 }
-#main-field {
-padding: 10px;
+/* All buttons */
+
+#addBtn {
+    text-align: center;
+    padding-top: 20px 32px;
+    background-color:black;
+    border-radius: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); 
 }
+#submitBtn {
+    text-align: center;
+    padding-top: 20px 32px;
+    background-color:black;
+    border-radius: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); 
+}
+
+
+/* footer  */
+
 
 #footer {
     position: absolute;

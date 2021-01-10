@@ -7,67 +7,141 @@
     <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <link rel="stylesheet" href="style.css">
-  </head>
-  <br></br>
-  <nav class="level">
-    <p class="level-item has-text-centered">
-      <a class="link is-info">Home</a>
-    </p>
-    <p class="level-item has-text-centered">
-      <a class="link is-info">Menu</a>
-    </p>
-    <h1 class="title" id="title">
-        LEFTOVERS
-      </h1>
-    <p class="level-item has-text-centered">
-      <a class="link is-info">Reservations</a>
-    </p>
-    <p class="level-item has-text-centered">
-      <a class="link is-info">Contact</a>
-    </p>
-  </nav>
-  <body  id="body">      
-  <div class="container"></div>
-  <div class="field has-addons-centered" id="main-field">
-    <label class="label">Please Enter Ingrediants</label>
-    <div class="control">
-      <input class="input" type="text" placeholder="Current ingrediants">
-      <label class="checkbox">
-        <input type="checkbox">
-        Chicken
-      </label>
-      <div></div>
-      <label class="checkbox">
-        <input type="checkbox">
-        Beef
-      </label>
-      <div></div>
-      <label class="checkbox">
-        <input type="checkbox">
-        Pork
-      </label>
-      <div></div><label class="checkbox">
-        <input type="checkbox">
-        Fish
-      </label>
-      <div></div><label class="checkbox">
-        <input type="checkbox">
-        I'm Vegan!
-      </label>
-      
-    </div>
-  </div>
+    </head>
+    <body> 
+      <nav class="navbar has-background-grey-darker" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="./Food.html">
+            <img src="./images/logo.jpeg" >
+          </a>
   
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+            data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
   
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item has-text-weight-bold has has-text-white">
+              Home
+            </a>
+  
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link has-text-weight-bold has-text-white">
+                More
+              </a>
+  
+              <div class="navbar-dropdown">
+                <a class="navbar-item">
+                  About
+                </a>
+                <a class="navbar-item">
+                  Jobs
+                </a>
+                <a class="navbar-item">
+                  Contact
+                </a>
+                <hr class="navbar-divider">
+                <a class="navbar-item">
+                  Report an issue
+                </a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-primary">
+                  <strong id="sign-upBtn">Sign up</strong>
+                </a>
+                <a class="button is-light">
+                  Log in
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+        <!--  -->
+            <div class="hero-body">
+                <div class="container is-fluid">
+                  <div class="columns">                                                                             
+                    <!--  need to place 1st column here to push menue over -->
+                    <!-- <div class="column is has-addons-centered"> -->
+                        <div class="column is-6">
+                            <form action="" class="box" id="hero">
+                                <div class="field">
+                                    <label class="label">
+                                        <!-- grey out maxuimum input -->
+                                        Enter the ingredients you would like to use today! 
+                                    </label>
+                                   <input class="input" type="text" placeholder="e.g chicken, peas, blackpepper....(max. 5)" id="ingre">
+                                </input>
+                               <!-- add event listner to id= to append results to items-added list -->
+                                <div class="field is-grouped">
+                                    <div class="control">
+                                      <button class="button is-link is-normal" id="addBtn">ADD ITEM TO LIST</button>
+                                    </div>  
+                                    <br></br>                               
+                                          <!--  Append ingredients to list  -->
+                                <div class="column box" id="ingredients-list" class="input">
+                                          pepper, salt, chicken, broth, rice
+
+                                </div><button class="button is-dark is-normal" id="submitBtn">Submit</button>
+                                
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+              <!-- first column -->
+              <div class="column ">
+                <p class="bd-notification is-info"></p>
+                <div class="columns is-mobile">
+                  <div class="column">
+                    <!-- first Nested column -->
+                    <p class="bd-notification is-info"></p>
+                    <form action="" class="box" id="hero">
+                      <div class="column is-2" id="1st">
+                      </div>
+                      <div class="column is-2" id="2nd">
+                      </div>
+                      <div class="column is 2" id="3rd">
+                      </div>
+                      <div class="column is 2" id="4th">
+                      </div>
+                      <div class="column is 2" id="5th">
+                      </div>                      
+                    </form>
+                  </div>
+                  
+                  <div class="column" id="">
+                    <!-- second nested column -->
+                    <p class="bd-notification is-info"></p>
+                    <!-- boxes to display 5 recipies -->                    
+                  </div>
+                  
+                </div>
+              </div> 
+            </div>   
+
+  
+   
+    </div> 
   </div>
   <!-- footer with working link to Repo -->
-  <footer class="footer" id="footer">
+  <footer class="footer has-background-grey-dark" id="footer">
     <div class="content has-text-centered">
       <p>
         <strong>2020-Thats My JJAM,Inc.</strong><a href="https://github.com/JRLaro/JJAM.git">All rights reserved</a>.
       </p>
     </div>        
-  </footer>
-  
+  </footer>  
   </body>
 </html>
