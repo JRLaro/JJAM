@@ -3,8 +3,8 @@ $(document).ready(function () {
     // const loginPopup = $(".login-popup");
     const loginPopup = document.querySelector(".login-popup");
 
-    // const close = $(".close");
 
+    // const close = $(".close");
     const close = document.querySelector(".close");
     
     window.addEventListener("load", function () {
@@ -17,6 +17,29 @@ $(document).ready(function () {
 
     })
     
+
+    $("#userInput").on("click", function () {
+
+        // this targets the users inPut
+        let userInput = $("#userInput").val();
+
+        // confirm information was captured
+        console.log(userInput);
+        // $("#userInput").val("")
+
+        //this is going to run the following function 
+        
+        $("#userInput").text(leftOver);
+        //this is for the search history
+        // localStorage.setItem(JSON.stringify(search));
+
+    })
+
+    // function userName(inPut) {
+
+    //     $("#userInput").text("#navBar");
+
+    // }
     // function showPopup() {
     //     const timeLimit = 5; // this reveals popUp in 5 seconds
     //     let i = 0;
