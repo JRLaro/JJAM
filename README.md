@@ -44,10 +44,10 @@ https://user-images.githubusercontent.com/74631465/104217979-12fe6480-540a-11eb-
 
 ## Credits // License
 
-Jordan Masone - @jmason15
-Jose Laro - @JRLaro
-Alejandro Castro - @CastroAlejandro
-Michael Carter - @codehawkeye
+- Jordan Masone - @jmason15
+- Jose Laro - @JRLaro
+- Alejandro Castro - @CastroAlejandro
+- Michael Carter - @codehawkeye
 
 > MIT License
 
