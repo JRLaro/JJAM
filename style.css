@@ -1,3 +1,185 @@
+/* body{
+    font-family: sans-serif;
+    margin: 0;
+    line-height: 1.5;
+} */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.login-popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1099;
+    background-color: transparent; /* change to transparent */
+    visibility:hidden;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.login-popup.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.login-popup .box{
+    background-color:white;
+    width: 750px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0;
+    margin-left: 50px;
+    transition:all 1s ease;
+}
+
+.login-popup.show .box {
+    opacity: 1;
+    margin-left: 0;
+} 
+
+.login-popup .box .img-area {
+    flex: 0 0 50%;
+    max-width: 50%; 
+    position: relative;
+    overflow: hidden;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.287);
+}
+ 
+.login-popup .box .img-area h1 {
+font-size: 30px;
+}
+
+.login-popup .box .img-area .img {
+position:absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background-image: url("https://i.pinimg.com/originals/02/cc/84/02cc8401b7df45eed2118d744d258460.jpg");
+background-size: cover;
+background-position: center;
+animation: zoomInOut 7s linear infinite;
+z-index: -1;
+transition: .5s ease;
+background-color: black;
+}
+
+/* experimenting with hovering over image and revealing BIO */
+
+.login-popup .box .img-area .img:hover {
+    opacity: 1;
+}
+
+
+
+/* experimenting with hovering over image and revealing BIO */
+
+
+@keyframes zoomInOut{
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+
+
+.login-popup .box .form {
+    flex: 0 0 50%;
+    max-width: 100%;
+    padding:40px 30px;
+    
+}
+
+.login-popup .box .form h1 {
+    color: #000000;
+    font-size: 30px;
+    margin: 0 0 30px;
+    
+}
+.login-popup .box .form-control {
+    height: 35px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px dashed black;
+    font-size: 15px;
+    color: black;
+}
+
+.login-popup .box .form-control:focus {
+outline: none;
+}
+
+.login-popup .box .form label {
+    font-size: 15px;
+    color: #555555;
+}
+.login-popup .box .form .btn:hover {
+background-color: #cccccc;
+color: black;
+border: 2px, solid black;
+}
+
+.login-popup .box .form .btn {
+    width: 100%;
+    color: white;
+    background-color: black;
+    margin-top: 40px;
+    height: 40px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.login-popup .box .form .btn:focus {
+outline: none;
+}
+
+.login-popup .box .form .close{
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* responsive */
+@media(max-width: 767px) {
+    .login-popup .box {
+        width: calc(100% - 30px);
+    }
+    .login-popup .box .img-area {
+        display: none;
+    }
+    .login-popup .box .form {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+
+/* everything above is the pop-up window */
+
+
+
 p{
     font-family: 'Roboto', sans-serif;
     font-size: 100px;
@@ -21,7 +203,6 @@ p:hover {
 
 #leftOver {
     margin-top: 5%;
-    padding: ;
     animation: slide 4s;
     /* background-image: url(https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1504674900247-0877df9cc836%3Fixid%3DMXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%253D%26ixlib%3Drb-1.2.1%26auto%3Dformat%26fit%3Dcrop%26w%3D1050%26q%3D80);
     background-image: cover; */
