@@ -13,6 +13,14 @@
 // 	})
 // })
 
+<<<<<<< HEAD
+$.ajax(settings).done(function (response) {
+	console.log(response);
+});
+
+
+
+=======
 
 $(document).ready(function () {
 	$("#userTextInput").keypress(function (event) {
@@ -45,3 +53,4 @@ $(document).ready(function () {
 		$("#mainContainer").hide()
 	})
 })
+>>>>>>> 62420d50e034002b127a51f994f9b9c1c437a6a3
