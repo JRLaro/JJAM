@@ -199,7 +199,7 @@ p:hover {
 #leftOver {
     margin-top: 5%;
     animation: slide 4s;
-   
+}
 
 #select {
     animation: select 2s;
