@@ -1,26 +1,63 @@
-// $.ajax(settings).done(function (response) {
-// 	console.log(response);
-// });
-// $(document).ready(function () {
-// 	$("#userTextInput").keypress(function (event) {
-// 		if (event.which === 13) {
-// 			console.log(event)
-// 			var text = $("#userTextInput").val();
-// 			$("#ingredientsCol").append(` <div class="button is-success">${text}</div> `)
-// 			$("#userTextInput").val("")
-			
-// 		}
-// 	})
-// })
 
-<<<<<<< HEAD
-$.ajax(settings).done(function (response) {
-	console.log(response);
-});
+$(document).ready(function () {
+
+    // const loginPopup = $(".login-popup");
+    const loginPopup = document.querySelector(".login-popup");
 
 
+    // const close = $(".close");
+    const close = document.querySelector(".close");
+    
+    window.addEventListener("load", function () {
+        
+        // showPopup();
+        setTimeout(function () {
+            // $(loginPopup).attr("show");
+            loginPopup.classList.add("show");
+        },5000)
 
-=======
+    })
+    
+
+    $("#userInput").on("click", function () {
+
+        // this targets the users inPut
+        let userInput = $("#userInput").val();
+
+        // confirm information was captured
+        console.log(userInput);
+        // $("#userInput").val("")
+
+        //this is going to run the following function 
+        
+        $("#userInput").text(leftOver);
+        //this is for the search history
+        // localStorage.setItem(JSON.stringify(search));
+
+    })
+
+    
+
+    close.addEventListener("click", function () {
+        loginPopup.classList.remove("show");
+    })
+
+
+
+
+
+
+
+
+
+
+ })
+
+
+
+)
+
+
 
 $(document).ready(function () {
 	$("#userTextInput").keypress(function (event) {
@@ -53,4 +90,4 @@ $(document).ready(function () {
 		$("#mainContainer").hide()
 	})
 })
->>>>>>> 62420d50e034002b127a51f994f9b9c1c437a6a3
+
