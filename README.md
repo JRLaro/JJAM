@@ -23,7 +23,7 @@ This application does all the hard work for you, so you don't have to. It's real
 
 ## Installation
 
-This Web application can be easily accessed by the link: https://jrlaro.github.io/weatherDashboard/
+This Web application can be easily accessed by the link: (Enter website)
 which will re-direct you. *Make sure that you are connected to the internet.
 
 ## Technologies
