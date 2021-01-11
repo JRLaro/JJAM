@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
 
     // const loginPopup = $(".login-popup");
@@ -35,24 +36,7 @@ $(document).ready(function () {
 
     })
 
-    // function userName(inPut) {
-
-    //     $("#userInput").text("#navBar");
-
-    // }
-    // function showPopup() {
-    //     const timeLimit = 5; // this reveals popUp in 5 seconds
-    //     let i = 0;
-    //     const timer = setInterval(function () {
-    //         i++;
-
-    //         if (i == timeLimit) {
-    //             clearInterval(timer);
-    //             loginPopup.classList.add("show");
-    //         }
-    //         console.log(i);
-    //     }, 1000);
-    // }
+    
 
     close.addEventListener("click", function () {
         loginPopup.classList.remove("show");
@@ -69,4 +53,41 @@ $(document).ready(function () {
 
  })
 
+
+
+)
+
+
+
+$(document).ready(function () {
+	$("#userTextInput").keypress(function (event) {
+		if (event.which === 13) {
+			console.log(event)
+			var text = $("#userTextInput").val();
+			var drinkBtn = $("<button>").addClass("button m-1 is-primary has-text-weight-bold").text(text);
+			var drinkDelete = $("<button>").addClass("delete is-small");
+			drinkBtn.append(drinkDelete);
+			$("#ingredientsCol").append(drinkBtn)
+			$("#userTextInput").val("")
+
+		}
+	})
+
+
+	$("#ingredientsCol").on("click", ".button > .delete", function(){
+		$(this).parent().remove();
+		console.log($(this));
+
+	})
+
+	$("#searchButton").click(function(){
+		$("#mainContainer").show();
+	})
+
+	$("#resetButton").click(function(){
+		$("#ingredientsCol").empty();
+		console.log("this is working")
+		$("#mainContainer").hide()
+	})
+})
 
