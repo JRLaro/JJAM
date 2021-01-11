@@ -74,7 +74,7 @@ transition: .5s ease;
 background-color: black;
 }
 
-/* experimenting with hovering over image and revealing BIO */
+/* experimenting with hovering over image and revealing BIO 
 
 .login-popup .box .img-area .img:hover {
     opacity: 1;
@@ -82,7 +82,7 @@ background-color: black;
 
 
 
-/* experimenting with hovering over image and revealing BIO */
+
 
 
 @keyframes zoomInOut{
@@ -156,7 +156,7 @@ outline: none;
     cursor: pointer;
 }
 
-/* responsive */
+
 @media(max-width: 767px) {
     .login-popup .box {
         width: calc(100% - 30px);
@@ -171,7 +171,7 @@ outline: none;
 }
 
 
-/* everything above is the pop-up window */
+
 
 
 
@@ -251,6 +251,6 @@ p:hover {
         transform: translate3d(0px, 0px, 0px);
     }
 }
-
+*/
 
 
