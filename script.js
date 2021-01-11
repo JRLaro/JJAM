@@ -1,4 +1,4 @@
-
+/*
 $(document).ready(function () {
 
     // const loginPopup = $(".login-popup");
@@ -44,7 +44,7 @@ $(document).ready(function () {
 
 
  })
-
+*/
 
 
 
