@@ -1,8 +1,8 @@
-# JJAM
+# Leftover Hangover
 
 ## Description 
 
-> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+> Do you ever have lots of food in your kitchen, but no idea what to cook? How about lots of alcohol, but no idea what drink to make? Not anymore, thanks to our application, Leftover Hangover. Leftover Hangover is a fridge to table application that allows the user to input the ingredients they have in their kitchens, and returns some possible recipes they could make. On the other side of the application, users can input what alcohol or mixers they have, and the website will return some drink recipes they could make. Every recipe on our website is accompanied by a picture, prep time, caloric information, and link to the recipe isntructions. With Leftover Hangover, you never have to worry about not knowing what to make again!
 
 
      -Simply select the option (LeftOver) or (HangOver).
@@ -10,13 +10,6 @@
      -HangOver: Insert your drink items and you will be presented with 5 randomized cocktails.
 
 
-  - Check it out: 
-
-
-
-## Installation
-
-which will re-direct you. *Make sure that you are connected to the internet.
 
 ## Technologies
 - HTML
@@ -24,14 +17,13 @@ which will re-direct you. *Make sure that you are connected to the internet.
 - JavaScript
 - Jquery
 - API's
-   - Food API
-   - Drink API
+   - Edamam Recipe API
+   - CocktailDB Drink Recipe API
  
 ## Usage 
 
-https://user-images.githubusercontent.com/74631465/104217979-12fe6480-540a-11eb-8b5a-3e05e9eaf0a6.mov
-
-![Screen Shot 2021-01-08 at 1 12 58 PM](https://user-images.githubusercontent.com/74631465/104218017-214c8080-540a-11eb-8b96-249323048cfd.png)
+![Screen Shot 2021-01-12 at 11 27 07 AM](https://user-images.githubusercontent.com/74631465/104342715-1efd2b80-54c9-11eb-86b8-67b0a2669f6a.png)
+![Screen Shot 2021-01-12 at 11 27 51 AM](https://user-images.githubusercontent.com/74631465/104342796-389e7300-54c9-11eb-8927-91ab0c29a14a.png)
 
 
 ## Credits // License
