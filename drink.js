@@ -3,7 +3,7 @@ $(document).ready(function () {
 		if (event.which === 13) {
 			console.log(event)
 			var text = $("#userTextInput").val();
-			var drinkBtn = $("<button>").addClass("button m-1 is-primary has-text-weight-bold").text(text);
+			var drinkBtn = $("<button>").addClass("button m-1 is-warning has-text-weight-bold").text(text);
 			var drinkDelete = $("<button>").addClass("delete is-small");
 			drinkBtn.append(drinkDelete);
 			$("#ingredientsCol").append(drinkBtn)
