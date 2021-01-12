@@ -182,9 +182,14 @@ p{
    
 }
 
-p:hover {
-    background-color: black;
+#leftOver:hover {
+    background-color: hsl(141, 53%, 53%);
     color: white;
+}
+
+#hangOver:hover {
+    background-color: hsl(48, 100%, 67%);
+    color: black;
 }
 
 #line {
