@@ -23,3 +23,10 @@
 }
 #container-space {
 } */
+#logo {
+    position: absolute;
+    left: 0px;
+    top: 8000px;
+    z-index: 1;
+
+}
