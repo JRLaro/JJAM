@@ -1,7 +1,5 @@
 $(document).ready(function () {
 	var ingredientList = []
-	const foodKey = "c6c6efb2c6cc9053c0c93e2cd2c6b0df"
-	const foodId = "f57fbffd"
 
 	$("#userTextInput").keypress(function (event) {
 		if (event.which === 13) {
