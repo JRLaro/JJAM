@@ -74,7 +74,7 @@ transition: .5s ease;
 background-color: black;
 }
 
-/* experimenting with hovering over image and revealing BIO 
+/* experimenting with hovering over image and revealing BIO  */
 
 .login-popup .box .img-area .img:hover {
     opacity: 1;
@@ -172,7 +172,7 @@ outline: none;
 
 
 
-*/
+
 
 
 p{
